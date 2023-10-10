@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;java.com.program.function&apos; to &apos;java.com.program.method&apos;&#x0D;&#x0A;- Original project: &apos;java-code-practice&apos;&#x0D;&#x0A;- Original element: &apos;java-code-practice/src/java.com.program.function&apos;&#x0D;&#x0A;- Renamed element: &apos;java-code-practice/src/java.com.program.method&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;java.com.program.function&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;java.com.program.function" name="java.com.program.method" qualified="false" references="true" stamp="1696960248027" textual="false" version="1.0"/>
+</session>
