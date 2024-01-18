@@ -1,0 +1,7 @@
+hey This is added by using write()
+This is added by append method
+hi
+hello
+bye
+abcba
+piyaayip
