@@ -1,9 +1,8 @@
 package com.java.searching;
 
-import javax.swing.*;
 import java.util.Scanner;
 
-public class BubbleSort {
+public class SelectionSort {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size of an array :");
@@ -12,23 +11,26 @@ public class BubbleSort {
 
         System.out.println("ENTER DATA IN AN ARRAY");
         for (int i = 0; i <= arr.length - 1; i++) {
-            arr[i] = scanner.nextInt();
+          arr[i] = scanner.nextInt();
         }
         System.out.println("DISPLAYING BEFORE SORTING");
         for (int i = 0; i <= arr.length - 1; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int tmp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = tmp;
-                }
-            }
+           System.out.print(arr[i] + " ");
+
         }
 
-        System.out.println("\nDISPLAYING AFTER BUBBLE SORTING");
+        for(int i = 0; i <= arr.length-1; i++){
+            int min = i;
+            for(int j = i+1 ;j <= arr.length - 1; j++ ){
+                if(arr[min] > arr[j]){
+                    min = j;
+                }
+            }
+            int tmp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = tmp;
+        }
+        System.out.println("\nDISPLAYING AFTER   SORTING");
         for (int data : arr) {
             System.out.print(data + " ");
         }
