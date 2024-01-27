@@ -58,20 +58,16 @@ public class Stack {
         int size = scanner.nextInt();
         //Stack Created
         createStack(size);
-
         //Calling Push
         System.out.println("Adding Data In Stack");
         for(int i =0 ;i<= size-1; i++){
             int data= scanner.nextInt();
             push(data);
         }
-
         //Calling pop
          pop();
-
         //Calling display
         display();
-
         isEmpty();
 
         isFull();
