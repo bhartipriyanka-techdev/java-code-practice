@@ -9,7 +9,7 @@ public class DeleteRecord {
     public static void main(String[] args) {
         Connection con = null;
         Statement stmt = null;
-        String qry = "delete from record.student where id = 102";
+        String qry = "delete from record.student where id = 106";
 
         try {
 
@@ -32,7 +32,7 @@ public class DeleteRecord {
 
             //Create Sql Statement
         } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         finally {
             if(stmt != null){
